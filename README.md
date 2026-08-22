@@ -1,20 +1,63 @@
-# Ambientika Ventilation for Home Assistant
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="custom_components/ambientika_ventilation/brand/dark_icon@2x.png">
+    <img src="custom_components/ambientika_ventilation/brand/icon@2x.png" alt="Ambientika Ventilation" width="128">
+  </picture>
+</p>
 
-[![CI](https://github.com/SoftwareSchmied/ha-ambientika-ventilation/actions/workflows/ci.yml/badge.svg)](https://github.com/SoftwareSchmied/ha-ambientika-ventilation/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/SoftwareSchmied/ha-ambientika-ventilation/actions/workflows/codeql.yml/badge.svg)](https://github.com/SoftwareSchmied/ha-ambientika-ventilation/actions/workflows/codeql.yml)
-[![GitHub release](https://img.shields.io/github/v/release/SoftwareSchmied/ha-ambientika-ventilation)](https://github.com/SoftwareSchmied/ha-ambientika-ventilation/releases)
-[![HACS validation](https://img.shields.io/badge/HACS-validated-41BDF5.svg)](https://hacs.xyz/docs/publish/integration/)
+<h1 align="center">Ambientika Ventilation for Home Assistant</h1>
 
-Ambientika is a native Home Assistant integration for cloud-connected Südwind
-Ambientika ventilation units. It discovers every supported device on an
-Ambientika account and provides monitoring and safe controls without YAML.
+<p align="center">
+  A modern, independent Home Assistant integration for cloud-connected<br>
+  Südwind Ambientika ventilation systems.
+</p>
+
+<p align="center">
+  <a href="https://github.com/SoftwareSchmied/ha-ambientika-ventilation/releases"><img src="https://img.shields.io/github/v/release/SoftwareSchmied/ha-ambientika-ventilation" alt="Latest release"></a>
+  <a href="https://github.com/SoftwareSchmied/ha-ambientika-ventilation/actions/workflows/ci.yml"><img src="https://github.com/SoftwareSchmied/ha-ambientika-ventilation/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/SoftwareSchmied/ha-ambientika-ventilation/actions/workflows/codeql.yml"><img src="https://github.com/SoftwareSchmied/ha-ambientika-ventilation/actions/workflows/codeql.yml/badge.svg" alt="CodeQL"></a>
+  <a href="https://github.com/hacs/default/pull/10223"><img src="https://img.shields.io/badge/HACS-default%20inclusion%20pending-41BDF5" alt="HACS default inclusion pending"></a>
+</p>
+
+<p align="center">
+  <a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=SoftwareSchmied&repository=ha-ambientika-ventilation&category=integration"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open this repository in HACS"></a>
+</p>
+
+Ambientika Ventilation discovers the supported devices on an Ambientika
+account and provides monitoring and safe controls without YAML.
 
 > [!IMPORTANT]
 > Version 0.9.0 is a public beta. It has been validated against the live cloud
 > API, the official Android app 1.5.1, and two Ambientika Ghost installations.
 > Reports from other device families and firmware versions remain welcome.
 
-## Features
+## Quick installation
+
+### HACS
+
+1. Use the **Open this repository in HACS** button above, or add
+   `https://github.com/SoftwareSchmied/ha-ambientika-ventilation` under
+   **HACS → Integrations → ⋮ → Custom repositories** as an **Integration**.
+2. Install **Ambientika Ventilation** and restart Home Assistant.
+3. Open **Settings → Devices & services → Add integration** and select
+   **Ambientika Ventilation**.
+
+The request for inclusion in the default HACS catalog is currently
+[under review](https://github.com/hacs/default/pull/10223). Until it is
+accepted, install the integration as a custom repository using the steps above.
+
+### Manual
+
+Copy `custom_components/ambientika_ventilation` into the `custom_components`
+directory of your Home Assistant configuration, restart Home Assistant, and
+add the integration from the user interface.
+
+To remove the integration, delete its config entry under **Settings → Devices &
+services**, uninstall it in HACS, and restart Home Assistant. Removing the
+config entry does not delete the account or change any device configuration in
+the Ambientika cloud.
+
+## Key features
 
 - Home Assistant Config Flow with token refresh and reauthentication
 - Dynamic discovery across houses, rooms, zones, and Gemini devices
@@ -51,28 +94,6 @@ Assistant config entry and are never written to logs or diagnostics.
 Non-Gemini installations are controlled through the master of each ventilation
 zone. Slave devices are retained as diagnostic devices and are never sent
 duplicate commands.
-
-## Installation
-
-### HACS
-
-1. Open this repository in HACS using the button below, or add its URL under
-   **HACS → Integrations → ⋮ → Custom repositories** as an **Integration**.
-2. Install **Ambientika Ventilation** and restart Home Assistant.
-3. Open **Settings → Devices & services → Add integration → Ambientika Ventilation**.
-
-[![Open your Home Assistant instance and add this repository to HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=SoftwareSchmied&repository=ha-ambientika-ventilation&category=integration)
-
-### Manual
-
-Copy `custom_components/ambientika_ventilation` into the `custom_components` directory of
-your Home Assistant configuration, restart Home Assistant, and add the
-integration from the user interface.
-
-To remove the integration, delete its config entry under **Settings → Devices &
-services**, uninstall it in HACS, and restart Home Assistant. Removing the
-config entry does not delete the account or change any device configuration in
-the Ambientika cloud.
 
 ## Entities
 
@@ -115,7 +136,7 @@ is active and while the filter status is `Bad`; schedule deactivation and filter
 reset remain available. The two airflow-direction modes are offered only for
 non-Gemini units, while Gemini units also omit Away mode.
 
-## Polling and cloud usage
+## Reliability and cloud usage
 
 Device status is refreshed every 60 seconds, preferably through one aggregate
 request per house. Missing packets automatically fall back to per-device
@@ -131,7 +152,7 @@ confirmed by the official Android app. Every write sends a complete, validated
 state and immediately reads the device state back so that cloud-side rounding
 or rejection is visible in Home Assistant.
 
-## Moving from the former integration
+## Migrating from the former integration
 
 This project deliberately uses the new `ambientika_ventilation` domain so it
 does not inherit unstable config entries or name-based unique IDs from the
