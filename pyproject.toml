@@ -21,8 +21,8 @@ security = [
   "pip-audit==2.10.1",
 ]
 test = [
-  "homeassistant==2026.8.2",
-  "pytest-homeassistant-custom-component==0.13.356",
+  "homeassistant==2026.8.3",
+  "pytest-homeassistant-custom-component==0.13.357",
   "pytest==9.0.3",
   "pytest-asyncio==1.4.0",
   "pytest-cov==7.1.0",
