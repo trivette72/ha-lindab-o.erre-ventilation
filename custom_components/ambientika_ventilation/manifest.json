@@ -1,5 +1,5 @@
 {
-  "domain": "lindab_o.erre_ventilation",
+  "domain": "ambientika_ventilation",
   "name": "Lindab and O.ERRE Ventilation",
   "codeowners": ["@trivette72"],
   "config_flow": true,
