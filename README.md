@@ -35,7 +35,7 @@ account and provides monitoring and safe controls without YAML.
 
 ### HACS
 
-1. Add `"https://github.com/trivette72/ha-lindab-o.erre-ventilation` under
+1. Add `"https://github.com/trivette72/ha-lindab-o.erre-ventilation"` under
    **HACS → Integrations → ⋮ → Custom repositories** as an **Integration**.
 2. Install **Lindab and O.ERRE Ventilation** and restart Home Assistant.
 3. Open **Settings → Devices & services → Add integration** and select
