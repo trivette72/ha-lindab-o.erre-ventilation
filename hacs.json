@@ -1,6 +1,6 @@
 {
-  "name": "Ambientika Ventilation",
-  "filename": "ambientika_ventilation.zip",
+  "name": "Lindab and O.ERRE Ventilation",
+  "filename": "lindab_oerre_ventilation.zip",
   "render_readme": true,
   "zip_release": true,
   "homeassistant": "2026.8.0"
