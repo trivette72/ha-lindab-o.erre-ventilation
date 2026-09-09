@@ -7,8 +7,8 @@ from typing import Final
 
 from homeassistant.const import Platform
 
-DOMAIN: Final = "lindab_o.erre_ventilation"
-INTEGRATION_VERSION: Final = "0.1.0"
+DOMAIN: Final = "lindab_oerre_ventilation"
+INTEGRATION_VERSION: Final = "0.1.2"
 DEFAULT_BASE_URL: Final = "https://app-oerre.it:4521"
 DEFAULT_SCAN_INTERVAL: Final = timedelta(seconds=60)
 DISCOVERY_INTERVAL: Final = timedelta(hours=6)
