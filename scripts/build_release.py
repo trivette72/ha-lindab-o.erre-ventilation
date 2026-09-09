@@ -11,8 +11,8 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-COMPONENT = ROOT / "custom_components" / "ambientika_ventilation"
-ARCHIVE_NAME = "ambientika_ventilation.zip"
+COMPONENT = ROOT / "custom_components" / "lindab_oerre_ventilation"
+ARCHIVE_NAME = "lindab_oerre_ventilation.zip"
 CHECKSUM_NAME = f"{ARCHIVE_NAME}.sha256"
 _ZIP_TIMESTAMP = (2020, 1, 1, 0, 0, 0)
 
