@@ -35,7 +35,9 @@ account and provides monitoring and safe controls without YAML.
 
 ### Manual
 
-For more information, key features, supported devices, entities, reliability and cloud usage, diagnostics and privacy, troubleshooting and requirements follow original integration. Download the official O.ERRE application called O.Tech (EP S.p.A. developer), create an O.ERRE account, register your ventilation devices via your home Wi-Fi network by following the on-screen instructions, and try adding them to Home Assistant using this fork.
+Download the official O.ERRE application called O.Tech (EP S.p.A. developer), create an O.ERRE account, login and register your ventilation devices via your home Wi-Fi network by following the on-screen instructions, and try adding them to Home Assistant using this fork.
+
+For more information, key features, supported devices, entities, reliability and cloud usage, diagnostics and privacy, troubleshooting and requirements follow original integration. 
 
 Given the experimental nature of this fork, all functionality is used at your own risk.
 
