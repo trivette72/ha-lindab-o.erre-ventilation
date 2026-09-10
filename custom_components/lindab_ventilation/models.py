@@ -247,7 +247,7 @@ def parse_houses(
             name=_text(raw.get("name")) or f"Ambientika {serial[-4:]}",
             device_id=_integer(raw.get("id")),
             device_type=_enum(
-                raw.get("deviceType"), ("Ghost", "Diamond", "Icon", "Gemini")
+                raw.get("deviceType"), ("DRJ-160", "Tempero Ceram", "Icon", "Gemini")
             ),
             device_subtype=_enum(
                 raw.get("deviceSubtype"),
@@ -419,7 +419,7 @@ def parse_status(payload: object, fallback_serial: str) -> AmbientikaStatus:
             ),
         ),
         device_type=_enum(
-            raw.get("deviceType"), ("Ghost", "Diamond", "Icon", "Gemini")
+            raw.get("deviceType"), ("DRJ-160", "Tempero Ceram", "Icon", "Gemini")
         ),
         device_subtype=_enum(
             raw.get("deviceSubtype"),
