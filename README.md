@@ -1,6 +1,6 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="custom_components/ambientika_ventilation/brand/dark_icon.png">
+    <source media="(prefers-color-scheme: dark)" srcset="custom_components/lindab_ventilation/brand/dark_icon.png">
     <img src="custom_components/ambientika_ventilation/brand/icon.png" alt="Lindab Ventilation" width="256">
   </picture>
 </p>
