@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  Release: v0.1.0
+  >Release: v0.1.0
 </p>
 
 Lindab and O.ERRE Ventilation discovers the supported devices on an O.ERRE
