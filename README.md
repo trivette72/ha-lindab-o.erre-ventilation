@@ -20,7 +20,7 @@ Lindab and O.ERRE Ventilation discovers the supported devices on an O.ERRE
 account and provides monitoring and safe controls without YAML.
 
 > [!IMPORTANT]
-> Version 0.1.9 is a public beta. It has been validated against the live cloud
+> Version 0.2.0 is a public beta. It has been validated against the live cloud
 > API and one Lindab DRJ-160 APP installation.
 
 ## Quick installation
