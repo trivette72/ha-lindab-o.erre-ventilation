@@ -54,7 +54,7 @@ class AmbientikaEntity(CoordinatorEntity[AmbientikaCoordinator]):
     def device_info(self) -> DeviceInfo:
         """Return Home Assistant device registry metadata."""
         device = self.device_data.device
-        model = device.device_type or "Ambientika ventilation unit"
+        model = device.device_type or "Lindab ventilation unit"
         if device.device_subtype and device.device_subtype != "None":
             model = f"{model} {device.device_subtype}"
         firmware_parts = [
