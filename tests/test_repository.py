@@ -34,7 +34,7 @@ def test_release_metadata_is_consistent() -> None:
     hacs = json.loads((ROOT / "hacs.json").read_text("utf-8"))
 
     assert manifest["version"] == project["project"]["version"]
-    assert manifest["version"] == INTEGRATION_VERSION == "0.9.0"
+    assert manifest["version"] == INTEGRATION_VERSION == "0.1.9"
     assert manifest["domain"] == "ambientika_ventilation"
     assert manifest["config_flow"] is True
     assert manifest["iot_class"] == "cloud_polling"
