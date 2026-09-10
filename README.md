@@ -1,15 +1,11 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="custom_components/ambientika_ventilation/brand/dark_icon_lindab.png">
-    <img src="custom_components/ambientika_ventilation/brand/icon_lindab.png" alt="Lindab Ventilation" width="256">
-  </picture>
-  <picture">
-   <source media="(prefers-color-scheme: dark)" srcset="custom_components/ambientika_ventilation/brand/dark_icon_oerre.png">
-  <img src="custom_components/ambientika_ventilation/brand/icon_oerre.png" alt="O.ERRE Ventilation" width="256">
+    <source media="(prefers-color-scheme: dark)" srcset="custom_components/ambientika_ventilation/brand/dark_icon.png">
+    <img src="custom_components/ambientika_ventilation/brand/icon.png" alt="Lindab Ventilation" width="256">
   </picture>
 </p>
 
-<h1 align="center">Lindab and O.ERRE Ventilation for Home Assistant</h1>
+<h1 align="center">Lindab Ventilation for Home Assistant</h1>
 
 <p align="center">
   Fork of a modern, independent Home Assistant integration for cloud-connected<br>
