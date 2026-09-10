@@ -3,40 +3,40 @@
   "config": {
     "step": {
       "user": {
-        "title": "Connect to Ambientika",
-        "description": "Enter the credentials used by the Ambientika app.",
+        "title": "Connect to O.ERRE",
+        "description": "Enter the credentials used by the O.Tech app.",
         "data": {
           "username": "Email address",
           "password": "Password"
         },
         "data_description": {
-          "username": "Email address registered in the Ambientika app.",
-          "password": "Password for the Ambientika cloud account."
+          "username": "Email address registered in the O.Tech app.",
+          "password": "Password for the O.ERRE cloud account."
         }
       },
       "reauth_confirm": {
-        "title": "Reconnect Ambientika",
-        "description": "Enter valid Ambientika credentials to restore access.",
+        "title": "Reconnect O.ERRE",
+        "description": "Enter valid O.ERRE credentials to restore access.",
         "data": {
           "username": "Email address",
           "password": "Password"
         },
         "data_description": {
-          "username": "Email address registered in the Ambientika app.",
-          "password": "Current password for the Ambientika cloud account."
+          "username": "Email address registered in the O.Tech app.",
+          "password": "Current password for the O.ERRE cloud account."
         }
       }
     },
     "error": {
-      "cannot_connect": "Cannot connect to the Ambientika cloud",
+      "cannot_connect": "Cannot connect to the O.ERRE cloud",
       "invalid_auth": "The credentials are invalid",
-      "invalid_response": "The Ambientika cloud returned an invalid response",
+      "invalid_response": "The O.ERRE cloud returned an invalid response",
       "no_devices": "No supported devices were found in this account",
       "wrong_account": "These credentials belong to a different account",
       "unknown": "Unexpected error"
     },
     "abort": {
-      "already_configured": "This Ambientika account is already configured",
+      "already_configured": "This O.ERRE account is already configured",
       "reauth_successful": "Authentication was renewed successfully"
     }
   },
