@@ -94,7 +94,7 @@ class AmbientikaConfigFlow(ConfigFlow, domain=DOMAIN):
                 await self.async_set_unique_id(f"{DOMAIN}_{data[CONF_USER_ID]}")
                 self._abort_if_unique_id_configured()
                 return self.async_create_entry(
-                    title="Ambientika Ventilation", data=data
+                    title="Lindab Ventilation", data=data
                 )
 
         return self.async_show_form(
