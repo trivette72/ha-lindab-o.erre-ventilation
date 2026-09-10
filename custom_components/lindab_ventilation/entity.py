@@ -64,7 +64,7 @@ class AmbientikaEntity(CoordinatorEntity[AmbientikaCoordinator]):
         ]
         return DeviceInfo(
             identifiers={(DOMAIN, self._serial)},
-            manufacturer="Südwind",
+            manufacturer="Lindab",
             name=device.name,
             model=model,
             hw_version=(
