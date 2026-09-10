@@ -22,7 +22,7 @@ body:
     id: device_family
     attributes:
       label: Device family
-      options: [Ghost, Diamond, Icon, Gemini, Other or unknown]
+      options: [DRJ-160, Tempero Ceram, Icon, Gemini, Other or unknown]
     validations:
       required: true
   - type: textarea
